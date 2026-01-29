@@ -1,0 +1,6 @@
+2026-01-29 10:34:27 INFO  log4j_pkg.Log4jFramework - Browser launched
+2026-01-29 10:34:27 INFO  log4j_pkg.Log4jFramework - Navigating to login page
+2026-01-29 10:34:27 ERROR log4j_pkg.Log4jFramework - Login button not found
+2026-01-29 10:36:36 INFO  log4j_pkg.Log4jFramework - Browser launched
+2026-01-29 10:36:36 INFO  log4j_pkg.Log4jFramework - Navigating to login page
+2026-01-29 10:36:36 ERROR log4j_pkg.Log4jFramework - Login button not found
