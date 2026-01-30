@@ -1,0 +1,198 @@
+﻿c1
+
+package edu_test;
+
+public abstract class Employees 
+{
+	abstract void designation(String name);
+	abstract void salary();
+	
+}
+
+c2
+package edu_test;
+
+import java.util.Scanner;
+
+public class Developer extends Employees
+{
+    String name;
+    float sal;
+    static String designation;
+    void bonus(int bou)
+    {
+    	System.out.println("your bonus for the last month is " + bou);
+    }
+    void bonus(float bou)
+    {
+    	System.out.println("your bonus for the current month "+bou);
+    }
+    void designation(String name)
+	{
+		this.name=name;
+		System.out.println("hii "+name+" your currently working as a " +designation);
+		
+	}
+	void salary()
+	{
+		int sal=3000;
+		int days=30; 
+		this.sal=sal*days;
+		System.out.println("your have worked "+days+" and your sal is "+this.sal);
+		
+	}
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("plz enter your designation");
+		designation=sc.next();
+		Developer dp=new Developer();
+		System.out.println("plz enter your name");
+		dp.designation(sc.next());
+		dp.salary();
+		dp.bonus(3000);
+		dp.bonus(5000);
+		
+	}
+	
+	
+
+}
+prp2 
+c1
+package edu_test;
+
+public abstract class Bank 
+{
+	public int balance;
+	
+	abstract void deposite() ;
+	abstract void withdraw() ;
+	abstract void  gettbalance();
+
+	public int getBalance()
+	{
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+}
+
+c2
+package edu_test;
+
+import java.util.Scanner;
+
+public class crrent_acc extends Bank
+{
+	
+	static int amount;
+	static int choice;
+	
+	
+	
+	
+	void deposite() {
+		int tot=this.amount+super.getBalance();
+		
+		System.out.println("you have safely deposited the "+ this.amount);
+		System.out.println("your current balance is "+tot);
+		
+	}
+
+	void withdraw() {
+		int tot=amount-super.getBalance();
+		System.out.println("you have safely withdraw the "+ amount);
+		System.out.println("your current balance is "+tot);
+		
+		
+	}
+
+	void gettbalance() {
+		System.out.println("your current balance is "+super.getBalance());
+		
+	}
+	public static void main(String[] args) {
+		crrent_acc sa=new crrent_acc();
+		int bb=10000;
+		sa.setBalance(bb);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("plz enter the amount ");
+		amount=sc.nextInt();
+		System.out.println("click 1 for deposite");
+		System.out.println("click 2 for withdraw");
+		System.out.println("click 3 for see balance");
+		choice=sc.nextInt();
+		switch (choice) 
+		{
+		case 1 : sa.deposite();
+				break;
+		case 2 : sa.withdraw();
+				break;
+		
+		case 3 : sa.gettbalance();
+				break;
+		}
+		
+		
+	}
+
+}
+
+c3
+package edu_test;
+
+import java.util.Scanner;
+
+public class saveings_acc extends Bank
+{
+	static int amount;
+	static int choice;
+	
+	
+	void deposite() {
+		int tot=amount+super.getBalance();
+		System.out.println("you have safely deposited the "+ amount);
+		System.out.println("your current balance is "+tot);
+		
+	}
+
+	void withdraw() {
+		int tot=amount-super.getBalance();
+		System.out.println("you have safely withdraw the "+ amount);
+		System.out.println("your current balance is "+tot);
+		
+		
+	}
+
+	void gettbalance() {
+		System.out.println("your current balance is "+super.getBalance());
+		
+	}
+	public static void main(String[] args) {
+		saveings_acc sa=new saveings_acc();
+		sa.balance=10000;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("plz enter the amount ");
+		amount=sc.nextInt();
+		System.out.println("click 1 for deposite");
+		System.out.println("click 2 for withdraw");
+		System.out.println("click 3 for see balance");
+		choice=sc.nextInt();
+;		switch (choice) 
+		{
+		case 1 : sa.deposite();
+				break;
+		case 2 : sa.withdraw();
+				break;
+		
+		case 3 : sa.gettbalance();
+				break;
+		}
+		
+	}
+
+} 
+
