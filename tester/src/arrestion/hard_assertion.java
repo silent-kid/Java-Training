@@ -12,6 +12,5 @@ public class hard_assertion
 @Test
 public void f1() 
 {
-	Ass
 }
 }

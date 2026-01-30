@@ -1,8 +1,7 @@
 package lamdaoperation;
 
 
-  class ClaculatorUsingLamda implements Integermath
-{
+  class ClaculatorUsingLamda{
 	public int meth1(int a,int b,Integermath c) 
 	{
 		return  c.operation(a, b);
