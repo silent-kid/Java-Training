@@ -46,6 +46,7 @@ public class Put {
 
         given()
             .header("Content-Type", "application/json")
+            .header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e")
             .body(json.toString())
         .when()
             .put("/users/2")

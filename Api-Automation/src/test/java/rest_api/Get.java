@@ -1,4 +1,5 @@
 package rest_api;
+
 import static io.restassured.RestAssured.*;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
@@ -8,60 +9,49 @@ import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.*;
 
 public class Get {
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void getUsers() {
 		baseURI = "https://reqres.in/api";
-		
-		given().header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e").get("/users?page=2").then().statusCode(200).log().all();
+
+		given().header("X-api-key", "reqres_5282e5b946f94eb59c0aa3df95ad459e").get("/users?page=2").then()
+				.statusCode(200).log().all();
 	}
-	
-	@Test(enabled=false)
+
+	@Test(enabled = false)
 	public void getSingleUser() {
 
-	    baseURI = "https://reqres.in/api";
+		baseURI = "https://reqres.in/api";
 
-	    given().header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e")
-	    .when()
-	        .get("/users/2")
-	    .then()
-	        .statusCode(200)
-	        .log().all();
+		given().header("X-api-key", "reqres_5282e5b946f94eb59c0aa3df95ad459e").when().get("/users/2").then()
+				.statusCode(200).log().all();
 	}
-	
-	 @Test
-	    public void usingRequestSpecification() {
 
-	        baseURI = "https://reqres.in/api";
+	@Test
+	public void usingRequestSpecification() {
 
-	        RequestSpecification httpRequest = RestAssured.given();
+		baseURI = "https://reqres.in/api";
 
-	        httpRequest.header("Content-Type", "application/json");
-	        httpRequest.header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e");
-	        httpRequest.queryParam("page", 2);
+		RequestSpecification httpRequest = RestAssured.given();
 
-	        Response response = httpRequest.get("/users");
+		httpRequest.header("Content-Type", "application/json");
+		httpRequest.header("X-api-key", "reqres_5282e5b946f94eb59c0aa3df95ad459e");
+		httpRequest.queryParam("page", 2);
 
-	        System.out.println(response.asPrettyString());
+		Response response = httpRequest.get("/users");
 
-	        response.then().statusCode(200);
-	    }
-	 
+		System.out.println(response.asPrettyString());
 
-	 @Test
-	 public void validateUserEmail() {
+		response.then().statusCode(200);
+	}
 
-	     baseURI = "https://reqres.in/api";
+	@Test
+	public void validateUserEmail() {
 
-	     given()
-	     .header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e")
-	     .when()
-	         .get("/users/2")
-	     .then()
-	         .statusCode(200)
-	         .body("data.email", equalTo("janet.weaver@reqres.in"))
-	         .body("data.first_name", equalTo("Janet"))
-	         .log().all();
-	 }
+		baseURI = "https://reqres.in/api";
 
+		given().header("X-api-key", "reqres_5282e5b946f94eb59c0aa3df95ad459e").when().get("/users/2").then()
+				.statusCode(200).body("data.email", equalTo("janet.weaver@reqres.in"))
+				.body("data.first_name", equalTo("Janet")).log().all();
+	}
 
 }

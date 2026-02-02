@@ -5,7 +5,7 @@
     <classes>
       <class name="rest_api.Put">
         <methods>
-          <include name="putUser"/>
+          <include name="putUsingJSONObject"/>
         </methods>
       </class> <!-- rest_api.Put -->
     </classes>

@@ -2,33 +2,19 @@ package rest_api;
 
 import static io.restassured.RestAssured.*;
 import org.testng.annotations.Test;
+
 public class Post {
 
+	@Test
+	public void createUser() {
 
+		baseURI = "https://reqres.in/api";
 
-	    @Test
-	    public void createUser() {
+		String requestBody = "{\n" + "  \"name\": \"Jawwad\",\n" + "  \"job\": \"QA Engineer\"\n" + "}";
 
-	        baseURI = "https://reqres.in/api";
-
-	        String requestBody = "{\n" +
-	                "  \"name\": \"Jawwad\",\n" +
-	                "  \"job\": \"QA Engineer\"\n" +
-	                "}";
-
-	        given()
-	            .header("Content-Type", "application/json")
-	            .header("X-api-key","reqres_5282e5b946f94eb59c0aa3df95ad459e")
-	            .body(requestBody)
-	        .when()
-	            .post("/users")
-	        .then()
-	            .statusCode(201)
-	            .log().all();
-	    }
-	    
-	    
+		given().header("Content-Type", "application/json")
+				.header("X-api-key", "reqres_5282e5b946f94eb59c0aa3df95ad459e").body(requestBody).when().post("/users")
+				.then().statusCode(201).log().all();
 	}
 
-
-
+}
