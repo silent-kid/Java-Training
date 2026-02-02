@@ -26,6 +26,8 @@ public class Post {
 	            .statusCode(201)
 	            .log().all();
 	    }
+	    
+	    
 	}
 
 
