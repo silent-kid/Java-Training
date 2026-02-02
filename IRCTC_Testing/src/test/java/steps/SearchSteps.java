@@ -1,4 +1,5 @@
 package steps;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
@@ -93,9 +94,16 @@ public class SearchSteps{
 
     @Then("User should see a list of available flights")
     public void user_should_see_available_flights() throws InterruptedException {
-        assertTrue(driver.findElement(By.xpath("//div[contains(@class,'right-searchbartop')")).isDisplayed());
-        Thread.sleep(2000);
-        driver.quit();
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+    	WebElement searchBar = wait.until(
+    	    ExpectedConditions.presenceOfElementLocated(
+    	        By.xpath("//div[contains(@class,'right-searchbarbtm')]")
+    	    )
+    	);
+    	
+    	assertTrue(searchBar.isDisplayed(), "Flight list is not displayed");
+
     }
 }
 
