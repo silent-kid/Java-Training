@@ -39,7 +39,7 @@ public class LoginSteps {
         
         WebElement password = driver.findElement(By.xpath("//input[contains(@name,'password')]"));
         Thread.sleep(2000);
-        for (char c : "password".toCharArray()) {
+        for (char c : "ecommerce".toCharArray()) {
         	password.sendKeys(String.valueOf(c));
             Thread.sleep(200);
         }
