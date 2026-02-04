@@ -22,6 +22,7 @@ public class BearerAuth {
 		JsonPath jsonpath = res.jsonPath();
 		String reposname = jsonpath.getString("name");
 		
+		System.out.print(jsonpath);
 		System.out.print(reposname);
 		Assert.assertEquals(res.statusCode(), 200);
 		}

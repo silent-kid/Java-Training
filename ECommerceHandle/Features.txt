@@ -1,0 +1,4 @@
+And user reviews cart
+    And user completes checkout
+    Then order confirmation should be displayed
+    And user logs out
