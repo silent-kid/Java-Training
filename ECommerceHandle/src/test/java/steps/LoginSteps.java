@@ -34,11 +34,10 @@ public class LoginSteps {
 //        Thread.sleep(2000);
         for (char c : "username1029".toCharArray()) {
             username.sendKeys(String.valueOf(c));
-            Thread.sleep(100);
+//            Thread.sleep(100);
         }
         
         WebElement password = driver.findElement(By.xpath("//input[contains(@name,'password')]"));
-        Thread.sleep(2000);
         for (char c : "ecommerce".toCharArray()) {
         	password.sendKeys(String.valueOf(c));
             Thread.sleep(100);

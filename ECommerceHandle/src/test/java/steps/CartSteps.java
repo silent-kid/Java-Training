@@ -3,8 +3,6 @@ package steps;
 import io.cucumber.java.en.And;
 import utils.DriverFactory;
 
-import java.time.Duration;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
@@ -20,6 +18,7 @@ public class CartSteps {
         Thread.sleep(2000);
         WebElement desc = driver.findElement(By.xpath("//a[contains(normalize-space(),'Description')]"));
         actions.moveToElement(desc).perform();
+        driver.findElement(By.xpath("//a[contains(@class,'cart')]")).click();
         Thread.sleep(2000);
     }
 }
