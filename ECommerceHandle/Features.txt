@@ -4,3 +4,9 @@ And user reviews cart
     And user logs out
 
     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
+    
+    
+    
+        When user searches and sort the products
+    And user add and reviews cart
+    And user completes checkout

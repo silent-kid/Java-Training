@@ -37,8 +37,6 @@ public class CheckoutSteps {
 		WebElement footer = driver.findElement(By.xpath("//span[contains(@class,'totalamout')]"));
 		actions.moveToElement(footer).perform();
 		driver.findElement(By.xpath("//button[contains(@id,'checkout_btn')]")).click();
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//a[contains(normalize-space(),'invoice page')]")).click();
 		Thread.sleep(2000);
 	}
 }
