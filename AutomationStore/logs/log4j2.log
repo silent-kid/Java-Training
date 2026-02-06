@@ -1,0 +1,42 @@
+[INFO ] 2026-02-06 11:03:10.337 [main] HomePage - HomePage initialized
+[INFO ] 2026-02-06 11:03:10.339 [main] HomePage - Opening Automation Test Store application
+[INFO ] 2026-02-06 11:03:12.447 [main] HomePage - Clicking Login link
+[INFO ] 2026-02-06 11:03:14.197 [main] HomePage - Scrolling to Newsletter Signup section
+[INFO ] 2026-02-06 11:03:15.134 [main] HomePage - Entering username
+[INFO ] 2026-02-06 11:03:15.415 [main] HomePage - Entering password
+[INFO ] 2026-02-06 11:03:16.522 [main] HomePage - Submitting login form
+[INFO ] 2026-02-06 11:03:17.035 [main] AccountPage - AccountPage initialized
+[INFO ] 2026-02-06 11:03:17.036 [main] AccountPage - Opening Manage Address Book
+[INFO ] 2026-02-06 11:03:18.547 [main] AccountPage - Clicking New Address button
+[INFO ] 2026-02-06 11:03:19.490 [main] AccountPage - Entering first name and last name
+[INFO ] 2026-02-06 11:03:19.595 [main] AccountPage - Entering address, city, and postcode
+[INFO ] 2026-02-06 11:03:19.791 [main] AccountPage - Selecting country: India
+[INFO ] 2026-02-06 11:03:19.881 [main] AccountPage - Selecting region/state: Andhra Pradesh
+[INFO ] 2026-02-06 11:03:20.449 [main] AccountPage - Submitting address form
+[INFO ] 2026-02-06 11:03:20.632 [main] ProductPage - ProductPage initialized
+[INFO ] 2026-02-06 11:03:20.632 [main] ProductPage - Hovering on Apparel & Accessories menu
+[INFO ] 2026-02-06 11:03:22.494 [main] ProductPage - Opening T-Shirts category
+[INFO ] 2026-02-06 11:03:23.322 [main] ProductPage - Scrolling to first product price
+[INFO ] 2026-02-06 11:03:24.954 [main] ProductPage - Sorting products by Price: Low to High
+[INFO ] 2026-02-06 11:03:25.792 [main] ProductPage - Scrolling after sorting products
+[INFO ] 2026-02-06 11:03:27.417 [main] CartPage - CartPage initialized
+[INFO ] 2026-02-06 11:03:27.417 [main] CartPage - Selecting product to add to cart
+[INFO ] 2026-02-06 11:03:29.394 [main] CartPage - Scrolling to Description tab
+[INFO ] 2026-02-06 11:03:29.533 [main] CartPage - Clicking Add to Cart button
+[INFO ] 2026-02-06 11:03:32.001 [main] CheckoutPage - CheckoutPage initialized
+[INFO ] 2026-02-06 11:03:32.001 [main] CheckoutPage - Scrolling to Estimate Shipping & Taxes section
+[INFO ] 2026-02-06 11:03:32.133 [main] CheckoutPage - Updating product quantity
+[INFO ] 2026-02-06 11:03:32.179 [main] CheckoutPage - Clicking Update button
+[INFO ] 2026-02-06 11:03:33.648 [main] CheckoutPage - Scrolling to Apply Coupon Code section
+[INFO ] 2026-02-06 11:03:34.776 [main] CheckoutPage - Clicking Checkout link
+[INFO ] 2026-02-06 11:03:36.020 [main] CheckoutPage - Viewing items in cart
+[INFO ] 2026-02-06 11:03:36.153 [main] CheckoutPage - Opening Return Policy popup
+[INFO ] 2026-02-06 11:03:36.712 [main] CheckoutPage - Closing Return Policy popup
+[INFO ] 2026-02-06 11:03:37.766 [main] CheckoutPage - Scrolling to cart footer total
+[INFO ] 2026-02-06 11:03:37.893 [main] CheckoutPage - Clicking final Checkout button
+[INFO ] 2026-02-06 11:03:39.949 [main] LogoutPage - LogoutPage initialized
+[INFO ] 2026-02-06 11:03:39.950 [main] LogoutPage - Opening invoice page
+[INFO ] 2026-02-06 11:03:40.795 [main] LogoutPage - Clicking Continue button
+[INFO ] 2026-02-06 11:03:41.751 [main] LogoutPage - Hovering on Account menu
+[INFO ] 2026-02-06 11:03:41.885 [main] LogoutPage - Clicking Logout option
+[INFO ] 2026-02-06 11:03:42.915 [main] LogoutPage - User successfully logged out

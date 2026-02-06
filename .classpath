@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Api-Automation/src/test/java"/>
+	<classpathentry kind="src" path="Assessment-2/src/test/java"/>
+	<classpathentry kind="src" path="AutomationStore/src/test/java"/>
+	<classpathentry kind="src" path="Cucumber/src/test/java"/>
+	<classpathentry kind="src" path="ECommerceHandle/src/test/java"/>
+	<classpathentry kind="src" path="IRCTC_Testing/src/test/java"/>
+	<classpathentry kind="src" path="Java_learning_testing/src"/>
+	<classpathentry kind="src" path="JavaBasics/src"/>
+	<classpathentry kind="src" path="Maven-Frameworks/src/main/java"/>
+	<classpathentry kind="src" path="mytest/src/test/java"/>
+	<classpathentry kind="src" path="one/src/test/java"/>
+	<classpathentry kind="src" path="Page_obj_model/src/test/java"/>
+	<classpathentry kind="src" path="Practice_selinium/src/test/java"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="tester/src"/>
+	<classpathentry kind="src" path="TestNGprograms/src"/>
+	<classpathentry kind="lib" path="one/target/one-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="Api-Automation/target/test-classes"/>
+</classpath>

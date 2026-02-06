@@ -15,7 +15,7 @@ public class CartSteps {
     public void user_add_and_reviews_cart() throws InterruptedException {
     	Thread.sleep(500);
         driver.findElement(By.xpath("//a[contains(@data-id,'120')]")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         WebElement desc = driver.findElement(By.xpath("//a[contains(normalize-space(),'Description')]"));
         actions.moveToElement(desc).perform();
         driver.findElement(By.xpath("//a[contains(@class,'cart')]")).click();
