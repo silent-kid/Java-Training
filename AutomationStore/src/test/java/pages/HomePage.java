@@ -1,71 +1,3 @@
-//package pages;
-//
-//import java.time.Duration;
-//
-//import org.openqa.selenium.*;
-//import org.openqa.selenium.interactions.Actions;
-//
-//public class HomePage {
-//
-//    WebDriver driver;
-//    Actions actions;
-//
-//    // ---------- CONSTRUCTOR ----------
-//    public HomePage(WebDriver driver) {
-//        this.driver = driver;
-//        this.actions = new Actions(driver);
-//    }
-//
-//    // ---------- LOCATORS ----------
-//    By loginLink = By.xpath("//a[normalize-space()='Login']");
-//    By newsletterSection = By.xpath("//h2[normalize-space()='Newsletter Signup']");
-//    By usernameField = By.xpath("//input[contains(@name,'loginname')]");
-//    By passwordField = By.xpath("//input[contains(@name,'password')]");
-//    By loginButton = By.xpath("//button[@title='Login']");
-//
-//    // ---------- ACTION METHODS ----------
-//
-//    public void openApplication() {
-//        driver.get("https://automationteststore.com");
-//    }
-//
-//    public void clickLogin() {
-//        WebElement login = driver.findElement(loginLink);
-//        actions.moveToElement(login)
-//               .pause(Duration.ofMillis(800))
-//               .perform();
-//        login.click();
-//    }
-//
-//    public void scrollToNewsletter() {
-//        WebElement scroll = driver.findElement(newsletterSection);
-//        actions.moveToElement(scroll)
-//               .pause(Duration.ofMillis(800))
-//               .perform();
-//    }
-//
-//    public void enterUsername(String username) {
-//        WebElement user = driver.findElement(usernameField);
-//        for (char c : username.toCharArray()) {
-//            user.sendKeys(String.valueOf(c));
-//        }
-//    }
-//
-//    public void enterPassword(String password) throws InterruptedException {
-//        WebElement pass = driver.findElement(passwordField);
-//        for (char c : password.toCharArray()) {
-//            pass.sendKeys(String.valueOf(c));
-//            Thread.sleep(100);
-//        }
-//    }
-//
-//    public void submitLogin() {
-//        driver.findElement(loginButton).click();
-//    }
-//}
-
-
-
 package pages;
 
 import java.time.Duration;
@@ -82,24 +14,24 @@ public class HomePage {
     WebDriver driver;
     Actions actions;
 
-    // ✅ Logger instance
+
     private static final Logger logger = LogManager.getLogger(HomePage.class);
 
-    // ---------- CONSTRUCTOR ----------
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.actions = new Actions(driver);
         logger.info("HomePage initialized");
     }
 
-    // ---------- LOCATORS ----------
+
     By loginLink = By.xpath("//a[normalize-space()='Login']");
     By newsletterSection = By.xpath("//h2[normalize-space()='Newsletter Signup']");
     By usernameField = By.xpath("//input[contains(@name,'loginname')]");
     By passwordField = By.xpath("//input[contains(@name,'password')]");
     By loginButton = By.xpath("//button[@title='Login']");
 
-    // ---------- ACTION METHODS ----------
+
 
     public void openApplication() {
         logger.info("Opening Automation Test Store application");
