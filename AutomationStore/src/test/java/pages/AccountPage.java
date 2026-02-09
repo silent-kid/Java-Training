@@ -78,7 +78,7 @@ public class AccountPage {
 
     public void selectRegion(String region) throws InterruptedException {
         logger.info("Selecting region/state: {}", region);
-        Thread.sleep(500); // can replace with wait later
+        Thread.sleep(500);
         Select select = new Select(driver.findElement(regionDropdown));
         select.selectByVisibleText(region);
     }
