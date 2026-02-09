@@ -2,8 +2,6 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-
-// ✅ log4j2 imports
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

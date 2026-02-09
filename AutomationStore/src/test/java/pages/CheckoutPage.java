@@ -6,8 +6,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-// ✅ log4j2 imports
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
