@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "rep":"npx playwright show-report"
+    "rep": "npx playwright show-report"
   },
   "dependencies": {
     "allure-playwright": "^3.4.5",
