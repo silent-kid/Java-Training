@@ -1,0 +1,20 @@
+{
+  "name": "rest-api-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "rep":"npx playwright show-report"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.4.5",
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.2"
+  }
+}

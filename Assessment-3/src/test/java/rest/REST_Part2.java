@@ -24,7 +24,8 @@ public class REST_Part2 {
                 .pathParam("id", userId)
                 .when()
                 .get();
-    	
+    	System.out.println("User ID: " + userId + "->");
+        System.out.println(response.asPrettyString());
         Assert.assertEquals(response.statusCode(), 200, "Error");
         Assert.assertTrue(response.body().asString().contains("data"),"No data found");
     }
