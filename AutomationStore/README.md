@@ -148,9 +148,9 @@ Or run TestNGRunner.java directly from your IDE.
 
 ## 👥 Authors
 
+Chaitanya  
+Gokul  
+Jawwad
 Siva  
 Sivaram  
 Sriram  
-Gokul  
-Chaitanya  
-Jawwad
