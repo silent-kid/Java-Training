@@ -100,12 +100,12 @@ The automated scenario performs the following steps:
 
 ## 🛠 Technologies Used
 
-![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
-![Cucumber](https://img.shields.io/badge/Cucumber-BDD-brightgreen?logo=cucumber)
-![TestNG](https://img.shields.io/badge/TestNG-Testing-red)
-![Maven](https://img.shields.io/badge/Maven-Build-orange?logo=apachemaven)
-![Git](https://img.shields.io/badge/Git-VersionControl-red?logo=git)
+![Java](https://img.shields.io/badge/Java-17-blue?style=for-the-badge&logo=java)
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?style=for-the-badge&logo=selenium)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-brightgreen?style=for-the-badge&logo=cucumber)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-red?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-orange?style=for-the-badge&logo=apachemaven)
+![Git](https://img.shields.io/badge/Git-VersionControl-red?style=for-the-badge&logo=git)
 
 ------------------------------------------------------------------------
 
