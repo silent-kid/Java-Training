@@ -132,7 +132,7 @@ Logs are generated using Log4j2 during execution.
 
 Clone the repository:
 
-    git clone "https://github.com/silent-kid/Java-Training/AutomationStore"
+    git clone "https://github.com/silent-kid/Java-Training"
 
 Navigate to the project directory:
 
