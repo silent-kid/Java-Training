@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
             "html:target/cucumber-reports/cucumber.html",
             "json:target/cucumber-reports/cucumber.json"
     },
-    monochrome = true
+    monochrome = false
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
 }
