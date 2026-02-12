@@ -150,7 +150,7 @@ Or run TestNGRunner.java directly from your IDE.
 
 Chaitanya  
 Gokul  
-Jawwad
+Jawwad  
 Siva  
 Sivaram  
 Sriram  
