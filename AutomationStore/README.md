@@ -100,12 +100,12 @@ The automated scenario performs the following steps:
 
 ## 🛠 Technologies Used
 
-![Java](https://img.shields.io/badge/Java-17-white?style=flat-square&logo=java&logoColor=orange&labelColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-WebDriver-white?style=flat-square&logo=selenium&logoColor=green&labelColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-BDD-white?style=flat-square&logo=cucumber&logoColor=green&labelColor=white)
-![TestNG](https://img.shields.io/badge/TestNG-Testing-white?style=flat-square&labelColor=white&logoColor=red)
-![Maven](https://img.shields.io/badge/Maven-Build-white?style=flat-square&logo=apachemaven&logoColor=red&labelColor=white)
-![Git](https://img.shields.io/badge/Git-VersionControl-white?style=flat-square&logo=git&logoColor=red&labelColor=white)
+![Java](https://img.shields.io/badge/Java-17-blue?style=for-the-badge&logo=java)
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?style=for-the-badge&logo=selenium)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-brightgreen?style=for-the-badge&logo=cucumber)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-red?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-orange?style=for-the-badge&logo=apachemaven)
+![Git](https://img.shields.io/badge/Git-VersionControl-red?style=for-the-badge&logo=git)
 
 ------------------------------------------------------------------------
 
