@@ -19,7 +19,6 @@ public class LogoutPage {
     // Logger
     private static final Logger logger = LogManager.getLogger(LogoutPage.class);
 
-    
     By invoiceLink = By.xpath("//a[contains(normalize-space(),'invoice page')]");
     By continueBtn = By.xpath("//a[contains(@title,'Continue')]");
     By accountMenu = By.xpath("//span[normalize-space()='Account']");
@@ -35,24 +34,31 @@ public class LogoutPage {
     public void viewInvoiceAndLogout() throws InterruptedException {
 
         logger.info("Opening invoice page");
+        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(invoiceLink)).click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
+
         logger.info("Clicking Continue button");
         WebElement continueButton =
                 wait.until(ExpectedConditions.elementToBeClickable(continueBtn));
         actions.moveToElement(continueButton).perform();
+        Thread.sleep(2000);
         continueButton.click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
+
         logger.info("Hovering on Account menu");
         WebElement account =
                 wait.until(ExpectedConditions.visibilityOfElementLocated(accountMenu));
         actions.moveToElement(account).perform();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+
         logger.info("Clicking Logout option");
         WebElement logout =
                 wait.until(ExpectedConditions.elementToBeClickable(logoutOption));
+        Thread.sleep(2000);
         logout.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
+
         logger.info("User successfully logged out");
     }
 }

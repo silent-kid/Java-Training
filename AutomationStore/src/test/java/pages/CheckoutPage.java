@@ -19,7 +19,6 @@ public class CheckoutPage {
     // Logger
     private static final Logger logger = LogManager.getLogger(CheckoutPage.class);
 
-    
     By estimateShipping = By.xpath("//th[contains(normalize-space(),'Estimate Shipping & Taxes')]");
     By quantityInput = By.xpath("//input[contains(@id,'quantity')]");
     By updateBtn = By.xpath("//button[contains(@title,'Update')]");
@@ -43,44 +42,53 @@ public class CheckoutPage {
         logger.info("Scrolling to Estimate Shipping & Taxes section");
         WebElement table = driver.findElement(estimateShipping);
         actions.moveToElement(table).perform();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+
         logger.info("Updating product quantity");
         WebElement qty = driver.findElement(quantityInput);
-        qty.sendKeys(Keys.BACK_SPACE, "3");
+        Thread.sleep(2000);
+        qty.sendKeys(Keys.BACK_SPACE);
         Thread.sleep(1000);
+        qty.sendKeys("3");
+        Thread.sleep(3000);
+
         logger.info("Clicking Update button");
         driver.findElement(updateBtn).click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
 
         logger.info("Scrolling to Apply Coupon Code section");
         WebElement apply = driver.findElement(applyCoupon);
         actions.moveToElement(apply).perform();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         logger.info("Clicking Checkout link");
         WebElement checkout = wait.until(
                 ExpectedConditions.elementToBeClickable(checkoutLink));
+        Thread.sleep(2000);
         checkout.click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
+
         logger.info("Viewing items in cart");
         WebElement items = driver.findElement(itemsInCart);
         actions.moveToElement(items).perform();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+
         logger.info("Opening Return Policy popup");
         driver.findElement(returnPolicy).click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
 
         logger.info("Closing Return Policy popup");
         driver.findElement(closeBtn).click();
-
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         logger.info("Scrolling to cart footer total");
         WebElement footer = driver.findElement(footerTotal);
         actions.moveToElement(footer).perform();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
+
         logger.info("Clicking final Checkout button");
-        driver.findElement(checkoutBtn).click();
         Thread.sleep(2000);
+        driver.findElement(checkoutBtn).click();
+        Thread.sleep(6000);
     }
 }

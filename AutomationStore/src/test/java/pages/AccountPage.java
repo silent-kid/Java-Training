@@ -6,7 +6,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,14 +17,12 @@ public class AccountPage {
     // Logger 
     private static final Logger logger = LogManager.getLogger(AccountPage.class);
 
-    
     public AccountPage(WebDriver driver) {
         this.driver = driver;
         this.actions = new Actions(driver);
         logger.info("AccountPage initialized");
     }
 
-   
     By orderHistoryCard = By.xpath("//div[contains(normalize-space(),'Order history')]");
     By manageAddressLink = By.xpath("//a[contains(@data-original-title,'Manage Address Book')]");
     By newAddressBtn = By.xpath("//a[contains(@title,'New Address')]");
@@ -41,59 +38,63 @@ public class AccountPage {
 
     By continueBtn = By.xpath("//button[contains(@title,'Continue')]");
 
-   
-
     public void openManageAddress() throws InterruptedException {
         logger.info("Opening Manage Address Book");
         WebElement card = driver.findElement(orderHistoryCard);
         actions.moveToElement(card).perform();
+        Thread.sleep(2000);
         driver.findElement(manageAddressLink).click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void clickNewAddress() throws InterruptedException {
         logger.info("Clicking New Address button");
         WebElement addBtn = driver.findElement(newAddressBtn);
         actions.moveToElement(addBtn).perform();
+        Thread.sleep(2000);
         addBtn.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void enterName(String fName, String lName) throws InterruptedException {
         logger.info("Entering first name and last name");
         driver.findElement(firstName).sendKeys(fName);
+        Thread.sleep(1500);
         driver.findElement(lastName).sendKeys(lName);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void enterAddress(String addr, String cityName, String zip) throws InterruptedException {
         logger.info("Entering address, city, and postcode");
         driver.findElement(address1).sendKeys(addr);
+        Thread.sleep(1500);
         driver.findElement(city).sendKeys(cityName);
+        Thread.sleep(1500);
         driver.findElement(postcode).sendKeys(zip);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void selectCountry(String country) throws InterruptedException {
         logger.info("Selecting country: {}", country);
         Select select = new Select(driver.findElement(countryDropdown));
         select.selectByVisibleText(country);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void selectRegion(String region) throws InterruptedException {
         logger.info("Selecting region/state: {}", region);
-        Thread.sleep(500); // can replace with wait later
+        Thread.sleep(2000);
         Select select = new Select(driver.findElement(regionDropdown));
         select.selectByVisibleText(region);
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void submitAddress() throws InterruptedException {
         logger.info("Submitting address form");
         WebElement btn = driver.findElement(continueBtn);
         actions.moveToElement(btn).perform();
+        Thread.sleep(2000);
         btn.click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
     }
 }
