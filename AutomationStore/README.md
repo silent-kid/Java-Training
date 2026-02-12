@@ -19,11 +19,11 @@ Page Object Model (POM) combined with a Behavior Driven Development
 
 The project follows a layered hybrid framework design:
 
--   📝 BDD Layer -- Feature files written in Gherkin\
--   🔁 Step Definition Layer -- Maps feature steps to Java methods\
--   📄 Page Object Layer -- Contains UI interaction logic\
--   🔧 Hooks Layer -- Setup and teardown configuration\
--   ⚙ Utility Layer -- Driver management\
+-   📝 BDD Layer -- Feature files written in Gherkin
+-   🔁 Step Definition Layer -- Maps feature steps to Java methods
+-   📄 Page Object Layer -- Contains UI interaction logic
+-   🔧 Hooks Layer -- Setup and teardown configuration
+-   ⚙ Utility Layer -- Driver management
 -   ▶ Runner Layer -- Executes tests using TestNG
 
 ------------------------------------------------------------------------
