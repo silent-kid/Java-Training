@@ -100,14 +100,12 @@ The automated scenario performs the following steps:
 
 ## 🛠 Technologies Used
 
--   ☕ Java
--   🌐 Selenium WebDriver
--   🥒 Cucumber (BDD)
--   📊 TestNG
--   📦 Maven
--   📝 Log4j2
--   🔁 Git and GitHub
--   💻 Eclipse IDE
+![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-brightgreen?logo=cucumber)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-red)
+![Maven](https://img.shields.io/badge/Maven-Build-orange?logo=apachemaven)
+![Git](https://img.shields.io/badge/Git-VersionControl-red?logo=git)
 
 ------------------------------------------------------------------------
 
