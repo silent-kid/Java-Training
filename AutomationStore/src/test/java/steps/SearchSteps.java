@@ -12,7 +12,7 @@ public class SearchSteps {
     ProductPage productPage = new ProductPage(driver);
 
     @When("user searches and sort the products")
-    public void user_search_and_sort() {
+    public void user_search_and_sort() throws InterruptedException {
 
         productPage.hoverOnApparelMenu();
         productPage.openTShirtsCategory();

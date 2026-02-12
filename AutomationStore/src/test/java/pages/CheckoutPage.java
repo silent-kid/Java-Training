@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,10 +16,10 @@ public class CheckoutPage {
     Actions actions;
     WebDriverWait wait;
 
-
+    // Logger
     private static final Logger logger = LogManager.getLogger(CheckoutPage.class);
 
-
+    
     By estimateShipping = By.xpath("//th[contains(normalize-space(),'Estimate Shipping & Taxes')]");
     By quantityInput = By.xpath("//input[contains(@id,'quantity')]");
     By updateBtn = By.xpath("//button[contains(@title,'Update')]");
@@ -42,11 +43,11 @@ public class CheckoutPage {
         logger.info("Scrolling to Estimate Shipping & Taxes section");
         WebElement table = driver.findElement(estimateShipping);
         actions.moveToElement(table).perform();
-
+        Thread.sleep(1000);
         logger.info("Updating product quantity");
         WebElement qty = driver.findElement(quantityInput);
         qty.sendKeys(Keys.BACK_SPACE, "3");
-
+        Thread.sleep(1000);
         logger.info("Clicking Update button");
         driver.findElement(updateBtn).click();
         Thread.sleep(1000);
@@ -60,14 +61,14 @@ public class CheckoutPage {
         WebElement checkout = wait.until(
                 ExpectedConditions.elementToBeClickable(checkoutLink));
         checkout.click();
-
+        Thread.sleep(1000);
         logger.info("Viewing items in cart");
         WebElement items = driver.findElement(itemsInCart);
         actions.moveToElement(items).perform();
-
+        Thread.sleep(1000);
         logger.info("Opening Return Policy popup");
         driver.findElement(returnPolicy).click();
-        Thread.sleep(500);
+        Thread.sleep(1000);
 
         logger.info("Closing Return Policy popup");
         driver.findElement(closeBtn).click();
@@ -77,7 +78,7 @@ public class CheckoutPage {
         logger.info("Scrolling to cart footer total");
         WebElement footer = driver.findElement(footerTotal);
         actions.moveToElement(footer).perform();
-
+        Thread.sleep(1000);
         logger.info("Clicking final Checkout button");
         driver.findElement(checkoutBtn).click();
         Thread.sleep(2000);

@@ -1,0 +1,2 @@
+Alert message: I am an alert box!
+Accepting it now

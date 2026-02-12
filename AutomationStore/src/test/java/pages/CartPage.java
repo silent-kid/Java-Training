@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,6 +12,7 @@ public class CartPage {
     WebDriver driver;
     Actions actions;
 
+    // Logger 
     private static final Logger logger = LogManager.getLogger(CartPage.class);
 
     public CartPage(WebDriver driver) {
